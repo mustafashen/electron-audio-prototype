@@ -1,11 +1,10 @@
-import './index.css';
+import '../index.css';
 
 import { createRoot } from 'react-dom/client';
+import App from './app';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
-  <div>
-    <h1>Hello World!</h1>
-  </div>
+  <App/>
 );
