@@ -45,6 +45,14 @@ export default function App() {
         onClick={handleRecord}>
         Record
       </button>
+      <div>
+        Active: 
+        {
+          recorder ? recorder.stream.id : 'null'
+          // Rather than making getting audio stream in rendering process and passing it to main process,
+          // Create a context to initiate audio stream in main instance from rendering process
+        }
+      </div>
     </div>
   )
 }
